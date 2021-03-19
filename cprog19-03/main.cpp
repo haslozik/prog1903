@@ -12,19 +12,18 @@ class zadanie {
 	    for( int i = 0; i < 10; i++ ) {
 	    	for (j = 0; j < 10; j++) {
 	        	t[i][j] = 0;
-	   		}
-		}
+	   	}
+	    }
 	};
 
 	void losowanie() {
 		for (i = 0; i < 10; i++) {
-	        for (j = 0; j < 10; j++) {
-	            t[i][j] = rand()%6;
-	 
-	            cout << t[i][j] <<endl;
-	 
+	        	for (j = 0; j < 10; j++) {
+	            		t[i][j] = rand()%6;
+				
+	            		cout << t[i][j] <<endl;
 				suma = suma + t[i][j];
-	        }
+	        	}
 	 	}
 	}
 };
